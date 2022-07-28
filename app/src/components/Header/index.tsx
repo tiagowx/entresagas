@@ -3,8 +3,8 @@ import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <Box component='header'>
-      <Typography component='h1' variant='h3'>entre|sagas</Typography>
+    <Box component='header' m={1}>
+      <Typography component='h1' variant='h3'>Entre | Sagas</Typography>
     </Box>
   );
 }

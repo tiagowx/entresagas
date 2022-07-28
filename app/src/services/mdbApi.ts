@@ -1,9 +1,9 @@
 import axios from "axios";
+import configs from "../configs";
 
-const authorization = process.env.AUTH_TOKEN;
 
 const mdbApi = axios.create({
-  baseURL: "https://api.themoviedb.org/3"
+  baseURL: configs.api_url
 });
 
 export default mdbApi;

@@ -1,4 +1,4 @@
-export interface IMovie {
+export interface IContent {
   poster_path?: string;
   adult?: boolean;
   overview?: string;
@@ -13,4 +13,5 @@ export interface IMovie {
   vote_count?: number;
   video?: boolean;
   vote_average?: number;
+  name?: string;
 } 

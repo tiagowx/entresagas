@@ -1,11 +1,18 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import themeDefault from "../../themes/default";
 
 const Footer: React.FC = () => {
   return (
-    <Box component='footer'>
-      <Typography component='p'>
-        2022 | &copy Todos direitos reservados a Entre Sagas.
+    <Box component='footer' sx={{
+      maxWidth: 'full',
+      mt: 2,
+      p: 2,
+      bgcolor: themeDefault.palette.background.default,
+      color: themeDefault.palette.text.primary
+    }} >
+      <Typography component='p' textAlign='center'>
+        &copy; Todos direitos reservados. | Entre Sagas 2022
       </Typography>
     </Box>
   )
