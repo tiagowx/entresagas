@@ -1,7 +1,7 @@
 import configs from '../configs';
 import mdbApi from './mdbApi';
 
-async function getContent(content: string, period: string) {
+async function getContentService(content: string, period: string) {
   const response = await mdbApi.get(`/trending/${content}/${period}?api_key=${configs.api_key}&language=${configs.language}`)
 
 
@@ -11,4 +11,4 @@ async function getContent(content: string, period: string) {
 }
 
 
-export default getContent;
+export default getContentService;

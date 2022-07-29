@@ -1,5 +1,7 @@
+import { IContent } from "./IContent";
+
 export interface IContentTrendingsArea {
+  key: string;
   title: string;
-  content: 'all' | 'movie' | 'tv';
-  period: 'day' | 'week';
+  contents?: IContent[];
 }

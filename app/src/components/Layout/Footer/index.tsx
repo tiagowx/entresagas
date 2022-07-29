@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import themeDefault from "../../themes/default";
+import themeDefault from "../../../themes/default";
 
 const Footer: React.FC = () => {
   return (
